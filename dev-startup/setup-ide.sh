@@ -8,6 +8,7 @@ ln -s ../../../security-admin/target/security-admin-web-2.0.0/* .
 cd WEB-INF/classes
 cp -r ${DEV_PATH}/src/main/resources/conf ./
 
+## add this parameter to launch configuration
 
 #-XX:MetaspaceSize=100m
 #-XX:MaxMetaspaceSize=200m
