@@ -34,13 +34,15 @@ import org.apache.ranger.plugin.store.EmbeddedServiceDefsUtil;
 import org.apache.ranger.service.RangerPolicyService;
 import org.apache.ranger.util.CLIUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class PatchForPrestoToSupportPresto333_J10037 extends BaseLoader {
-  private static final Logger logger = Logger.getLogger(PatchForPrestoToSupportPresto333_J10037.class);
+@Component
+public class PatchForPrestoToSupportPresto333_J10038 extends BaseLoader {
+  private static final Logger logger = Logger.getLogger(PatchForPrestoToSupportPresto333_J10038.class);
 
   private static final List<String> PRESTO_RESOURCES = new ArrayList<>(
     Arrays.asList("function", "procedure", "prestouser", "systemproperty", "sessionproperty"));
@@ -75,8 +77,8 @@ public class PatchForPrestoToSupportPresto333_J10037 extends BaseLoader {
   public static void main(String[] args) {
     logger.info("main()");
     try {
-      PatchForPrestoToSupportPresto333_J10037 loader = (PatchForPrestoToSupportPresto333_J10037) CLIUtil
-        .getBean(PatchForPrestoToSupportPresto333_J10037.class);
+      PatchForPrestoToSupportPresto333_J10038 loader = (PatchForPrestoToSupportPresto333_J10038) CLIUtil
+        .getBean(PatchForPrestoToSupportPresto333_J10038.class);
       loader.init();
       while (loader.isMoreToProcess()) {
         loader.load();
