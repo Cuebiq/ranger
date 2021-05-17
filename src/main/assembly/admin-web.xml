@@ -445,21 +445,21 @@
       <moduleSet>
           <binaries>
               <includeDependencies>true</includeDependencies>
-              <outputDirectory>/ews/webapp/WEB-INF/classes/ranger-plugins/presto</outputDirectory>
+              <outputDirectory>/ews/webapp/WEB-INF/classes/ranger-plugins/trino</outputDirectory>
               <unpack>false</unpack>
               <directoryMode>755</directoryMode>
               <fileMode>644</fileMode>
               <dependencySets>
                   <dependencySet>
                       <includes>
-                          <include>io.prestosql:presto-spi:jar:${presto.version}</include>
-                          <include>io.prestosql:presto-jdbc:jar:${presto.version}</include>
+                          <include>io.trino:trino-spi:jar:${trino.version}</include>
+                          <include>io.trino:trino-jdbc:jar:${trino.version}</include>
                       </includes>
                   </dependencySet>
               </dependencySets>
           </binaries>
           <includes>
-              <include>org.apache.ranger:ranger-presto-plugin</include>
+              <include>org.apache.ranger:ranger-trino-plugin</include>
           </includes>
       </moduleSet>
 

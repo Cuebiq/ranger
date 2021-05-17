@@ -250,7 +250,7 @@
 	
 	<property>
 		<name>ranger.supportedcomponents</name>
-		<value>presto,hive,knox</value>
+		<value>trino,hive,knox</value>
 	</property>
 	<property>
 		<name>ranger.downloadpolicy.session.log.enabled</name>
