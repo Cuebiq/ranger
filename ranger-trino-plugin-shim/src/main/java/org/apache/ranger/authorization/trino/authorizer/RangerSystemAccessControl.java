@@ -34,7 +34,7 @@ import java.util.Set;
 public class RangerSystemAccessControl
   implements SystemAccessControl {
   private static final String RANGER_PLUGIN_TYPE = "trino";
-  private static final String RANGER_TRINO_AUTHORIZER_IMPL_CLASSNAME = "RangerSystemAccessControl";
+  private static final String RANGER_TRINO_AUTHORIZER_IMPL_CLASSNAME = "org.apache.ranger.authorization.trino.authorizer.RangerSystemAccessControl";
 
   final private RangerPluginClassLoader rangerPluginClassLoader;
   final private SystemAccessControl systemAccessControlImpl;
