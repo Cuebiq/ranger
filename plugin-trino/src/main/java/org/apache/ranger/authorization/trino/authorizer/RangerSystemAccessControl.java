@@ -595,6 +595,9 @@ public class RangerSystemAccessControl
     }
   }
 
+  @Override
+  public void checkCanExecuteFunction(SystemSecurityContext systemSecurityContext, String functionName)
+  { }
 
   /** HELPER FUNCTIONS **/
 
