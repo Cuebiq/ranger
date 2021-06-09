@@ -714,7 +714,7 @@ class RangerTrinoResource
   public static final String KEY_SCHEMA = "schema";
   public static final String KEY_TABLE = "table";
   public static final String KEY_COLUMN = "column";
-  public static final String KEY_USER = "trinouser";
+  public static final String KEY_USER = "prestouser";
   public static final String KEY_SYSTEM_PROPERTY = "systemproperty";
   public static final String KEY_SESSION_PROPERTY = "sessionproperty";
 
